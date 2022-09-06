@@ -1,0 +1,43 @@
+footer {
+  display: flex;
+  align-items: center;
+
+  margin-top: auto;
+  height: 110px;
+
+  border-top: 1px solid #DDD;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-panel {
+      display: grid;
+      gap: 7px;
+
+      span {
+        max-width: 277px;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #929292;
+      }
+    }
+
+    .right-panel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 32px;
+      height: 32px;
+      border-radius: 5px;
+
+      background-color: #EBEBEB;
+
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import './mixin/media';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+span {
+  display: block;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 712px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-lg {
+    width: 640px;
+  }
+
+  @include media-md {
+    width: 540px;
+  }
+
+  @include media-sm {
+    width: -webkit-fill-available;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.05px;
+  color: #000;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #000;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+@import 'scss/mixin/_media.scss';
+
+.AnimeView :global {
+  .container {
+    padding: 38px 0 33px;
+
+    .anime-view {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: 55px;
+      row-gap: 38px;
+
+      @include media-md {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      @include media-sm {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        row-gap: 17px;
+      }
+    }
+
+    .pagination {
+      margin-top: 38px;
+    }
+  }
+}
